@@ -1,0 +1,22 @@
+[user]
+	name = Janith Disanayake
+	email = janithdisanayake@users.noreply.github.com
+	signingkey = 9724664173F77E2E
+[credential]
+	helper = cache
+[safe]
+	directory = /home/janith/Desktop/git tester
+[core]
+	editor = vim
+[alias]
+	a = "add --all"
+	cm = "commit -s -S"
+	acm = !git add -A && git cm
+	lg = "log --pretty='%C(#FF00FF)%h  %C(#AAFF00)%m  %C(#00ffff)%s  %C(#AAFF00)%m  %C(#ffea00)%as  %C(#AAFF00)%m  %C(#ff5733)%an  %C(bold white)%d'"
+	lgg = "lg --graph"
+	lgga = "lgg --all"
+	g ="log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+[commit]
+	gpgSign = true
+[gpg]
+	program = /usr/bin/gpg
