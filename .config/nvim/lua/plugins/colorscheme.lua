@@ -1,14 +1,12 @@
-
 -- Configure LazyVim to load gruvbox
 return {
-
-	{ "ellisonleao/gruvbox.nvim" },
-	{ "zootedb0t/citruszest.nvim" },
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "citruszest",
-		},
-	},
+  { "olimorris/onedarkpro.nvim", priority = 1000 },
+  { "ellisonleao/gruvbox.nvim" },
+  { "zootedb0t/citruszest.nvim" },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "citruszest",
+    },
+  },
 }
-
