@@ -46,7 +46,9 @@ export PATH=$PATH:$GOPATH/bin
 eval "$(direnv hook zsh)"
 
 # autojump 
+if [ $(uname -s) = "Linux" ]; then
 . /usr/share/autojump/autojump.sh
+fi
 
 # fzf
 ff () {

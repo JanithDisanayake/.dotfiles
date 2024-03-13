@@ -19,4 +19,8 @@
 [commit]
 	gpgSign = true
 [gpg]
-	program = /usr/bin/gpg
+	if [ $(uname -s) = "Linux" ]; then
+		program = /usr/bin/gpg
+	else
+		program = /opt/homebrew/bin/gpg
+	fi		
