@@ -50,6 +50,9 @@ if [ $(uname -s) = "Linux" ]; then
 . /usr/share/autojump/autojump.sh
 fi
 
+# auto suggessions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # fzf
 ff () {
 	cd
