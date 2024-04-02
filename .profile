@@ -53,6 +53,9 @@ fi
 # auto suggessions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# gpg environment variable
+export GPG_TTY=$TTY
+
 # fzf
 ff () {
 	cd
