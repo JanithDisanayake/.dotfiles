@@ -19,8 +19,6 @@
 [commit]
 	gpgSign = true
 [gpg]
-	if [ $(uname -s) = "Linux" ]; then
-		program = /usr/bin/gpg
-	else
-		program = /opt/homebrew/bin/gpg
-	fi		
+	program = /usr/bin/gpg
+[includeIf "gitdir/i:~/.config/git/config_macos"]
+    	path = ~/.config/git/config_macos
