@@ -31,16 +31,19 @@ fi
 source <(ng completion script)
 
 # pnpm
-export PNPM_HOME="/home/janith/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# export PNPM_HOME="/Users/janith/Library/pnpm/Library/pnpm/store"
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
 # pnpm end
 
 # go
 export GOPATH="$HOME/go"
 export PATH=$PATH:$GOPATH/bin
+
+# bee
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # direnv
 eval "$(direnv hook zsh)"
